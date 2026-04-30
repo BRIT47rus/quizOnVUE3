@@ -1,5 +1,6 @@
 @import url(./resets.css);
 @import url(./normalize.css);
+@import url(./variables.css);
 @font-face {
   font-display: swap;
   font-family: 'Inter';

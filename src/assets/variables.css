@@ -1,4 +1,4 @@
-#root {
+:root {
   --primari-100: #81a1a9;
   --primari-200: #125365;
   --secondary-100: #edd0b6;
@@ -6,4 +6,23 @@
   --bg: #f1f1ef;
   --acces-color: #2a8f55;
   --error-color: #df4c25;
+
+  --spaccing-x: clamp(16px, 2vw, 32px);
+  --spaccing-l: clamp(8px, 2vw, 16px);
+
+  --font-h-weigth: 700;
+  --font-span-m-weigth: 400;
+  --font-span-s-weigth: 400;
+
+  --font-h-size: clamp(24px, 2vw, 36px);
+  --font-p-size: clamp(18px, 2vw, 28px);
+  --font-span-x-size: clamp(14px, 2vw, 20px);
+  --font-span-m-size: clamp(10px, 2vw, 14px);
+  --font-span-s-size: 10px;
+
+  --font-h-lh: clamp(28px, 2vw, 44px);
+  --font-p-lh: clamp(22px, 2vw, 32px);
+  --font-span-x-lh: clamp(18, 2vw, 24px);
+  --font-span-m-lh: clamp(12, 2vw, 16px);
+  --font-span-s-lh: 12px;
 }
