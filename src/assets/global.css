@@ -1,0 +1,38 @@
+@import url(./resets.css);
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(34, 83, 101) 44%,
+    rgb(244, 115, 62) 44%,
+    rgb(244, 115, 62) 57%,
+    rgb(246, 156, 67) 57%,
+    rgb(246, 156, 67) 86%,
+    rgb(249, 201, 69) 86%
+  );
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(34, 83, 101) 44%,
+    rgb(244, 115, 62) 44%,
+    rgb(244, 115, 62) 57%,
+    rgb(246, 156, 67) 57%,
+    rgb(246, 156, 67) 86%,
+    rgb(249, 201, 69) 86%
+  );
+  background: linear-gradient(
+    45deg,
+    rgb(34, 83, 101) 44%,
+    rgb(244, 115, 62) 44%,
+    rgb(244, 115, 62) 57%,
+    rgb(246, 156, 67) 57%,
+    rgb(246, 156, 67) 86%,
+    rgb(249, 201, 69) 86%
+  );
+}
