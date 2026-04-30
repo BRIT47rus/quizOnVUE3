@@ -1,6 +1,31 @@
 @import url(./resets.css);
+@import url(./normalize.css);
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/inter-v20-cyrillic-regular.woff2') format('woff2');
+}
 
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/inter-v20-cyrillic-500.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/inter-v20-cyrillic-700.woff2') format('woff2');
+}
 body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-variant-numeric: lining-nums;
   width: 100dvw;
   height: 100dvh;
   display: flex;
