@@ -9,7 +9,7 @@
 
   --spaccing-x: clamp(16px, 2vw, 32px);
   --spaccing-l: clamp(8px, 2vw, 16px);
-
+  --gap-m: 16px;
   --font-h-weigth: 700;
   --font-span-m-weigth: 400;
   --font-span-s-weigth: 400;
