@@ -1,7 +1,14 @@
 <template>
-  <main><slot></slot></main>
+  <main className="main"><slot></slot></main>
 </template>
 
 <script></script>
 
-<style scoped></style>
+<style scoped>
+.main {
+  background-color: var(--bg);
+  padding: var(--spaccing-x);
+  border-radius: var(--brs);
+  color: var(--primari-200);
+}
+</style>

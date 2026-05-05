@@ -6,7 +6,7 @@
   --bg: #f1f1ef;
   --acces-color: #2a8f55;
   --error-color: #df4c25;
-
+  --brs: 10px;
   --spaccing-x: clamp(16px, 2vw, 32px);
   --spaccing-l: clamp(8px, 2vw, 16px);
   --gap-m: 16px;

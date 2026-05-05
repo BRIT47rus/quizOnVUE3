@@ -63,3 +63,7 @@ body {
   );
   color: var(--bg);
 }
+.section {
+  display: grid;
+  gap: var(--spaccing-x);
+}
