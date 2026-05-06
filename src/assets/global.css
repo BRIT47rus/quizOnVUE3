@@ -67,3 +67,6 @@ body {
   display: grid;
   gap: var(--spaccing-x);
 }
+.center {
+  justify-content: center;
+}

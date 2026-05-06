@@ -1,5 +1,5 @@
 <template>
-  <section class="section"><WellcomeContent /></section>
+  <section class="section center"><WellcomeContent /></section>
 </template>
 
 <script setup>
