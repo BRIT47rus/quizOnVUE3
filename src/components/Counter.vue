@@ -1,13 +1,14 @@
 <script setup>
 import PTag from '@/components/PTag.vue';
+import ButtonCustom from '@/components/ButtonCustom.vue';
+import BaseIcon from '@/components/BaseIcon.vue';
 </script>
 
 <template>
   <div className="counter">
     <PTag>Выбери количество вопросов:</PTag>
-<Button/>
     <form className="form">
-<Button/
+      <ButtonCustom :iconSvg="iconPlus" :text="текст" />
       <div className="input">
         <input type="text" />
       </div>
