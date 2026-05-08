@@ -14,6 +14,8 @@
   --font-span-m-weigth: 400;
   --font-span-s-weigth: 400;
 
+  --spase-padd-m: 24px;
+
   --font-h-size: clamp(24px, 2vw, 36px);
   --font-p-size: clamp(18px, 2vw, 28px);
   --font-span-x-size: clamp(14px, 2vw, 20px);

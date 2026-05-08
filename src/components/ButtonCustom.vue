@@ -1,8 +1,14 @@
 <template>
-  <button aria-label="умненьшить количество" type="button" :class="{ buttonEnter: isEnternBTN }">
+  <button
+    aria-label="умненьшить количество"
+    type="button"
+    class="base"
+    :class="{ buttonEnter: isEnternBTN }"
+  >
     <BaseIcon v-if="iconSvg" :name="iconSvg" />
     <span v-else>{{ text }}</span>
   </button>
+  <span v-if="isEnternBTN" class="enterText">или нажми Enter ↵</span>
 </template>
 
 <script setup>
@@ -13,14 +19,29 @@ const props = defineProps({
   custemClass: { type: String, default: '' },
   isEnternBTN: { type: Boolean, default: false },
 });
-// const iconName = 'minusIcon';
 </script>
 
 <style scoped>
 .base {
-  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .buttonEnter {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: var(--brs);
+  padding: var(--spase-padd-m);
+  color: var(--bg);
+  font-size: var(--font-span-x-size);
+  font-weight: var(--font-h-weigth);
+  max-width: 270px;
   background-color: var(--secondary-200);
+}
+.enterText {
+  text-align: center;
+  font-size: var(--font-span-s-size);
+  line-height: var(--font-span-s-lh);
+  margin-top: -8px;
 }
 </style>

@@ -8,17 +8,17 @@ const iconPlus = 'plusIcon';
 </script>
 
 <template>
-  <div className="counter">
+  <div class="counter">
     <PTag>Выбери количество вопросов:</PTag>
     <form className="form">
       <ButtonCustom :iconSvg="iconMinus" />
       <div className="input">
-        <input type="text" />
+        <input type="text" autofocus />
       </div>
       <ButtonCustom :iconSvg="iconPlus" />
     </form>
 
-    <ButtonCustom text="текст" isEnternBTN="false" />
+    <ButtonCustom text="Начать" isEnternBTN="false" />
   </div>
 </template>
 
@@ -26,6 +26,7 @@ const iconPlus = 'plusIcon';
 .counter {
   display: grid;
   justify-content: center;
+  align-items: center;
   gap: var(--spaccing-l);
 }
 .form {
