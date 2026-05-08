@@ -1,39 +1,45 @@
 <script setup>
+import { ref } from 'vue';
 import PTag from '@/components/PTag.vue';
 import ButtonCustom from '@/components/ButtonCustom.vue';
-import BaseIcon from '@/components/BaseIcon.vue';
+
+const iconMinus = 'minusIcon';
+const iconPlus = 'plusIcon';
 </script>
 
 <template>
   <div className="counter">
     <PTag>Выбери количество вопросов:</PTag>
     <form className="form">
-      <ButtonCustom :iconSvg="iconPlus" :text="текст" />
+      <ButtonCustom :iconSvg="iconMinus" />
       <div className="input">
         <input type="text" />
       </div>
-      <button aria-label="увеличить количество" type="button">
-        <img src="/plus.svg" alt="" aria-hidden="true;" />
-      </button>
+      <ButtonCustom :iconSvg="iconPlus" />
     </form>
+
+    <ButtonCustom text="текст" isEnternBTN="false" />
   </div>
 </template>
 
 <style scoped>
 .counter {
   display: grid;
+  justify-content: center;
   gap: var(--spaccing-l);
 }
 .form {
   display: flex;
+  justify-content: center;
+  gap: var(--gap-m);
 }
 .input {
   border: 4px solid var(--primari-200);
   width: 118px;
   height: 76px;
+  border-radius: var(--brs);
   input {
-    border: none;
-    outline: none;
+    text-align: center;
     width: 100%;
     height: 100%;
     font-size: 36px;

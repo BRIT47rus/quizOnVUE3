@@ -190,6 +190,11 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+input,
 a {
   color: inherit;
+}
+input {
+  outline: inherit;
+  background-color: inherit;
 }
